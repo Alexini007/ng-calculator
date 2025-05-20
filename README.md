@@ -28,11 +28,11 @@ Each component encapsualtes own logic and styling. This makes the code clean, sc
 The root path ('/') redirects to /calculator. The /calculator route loads the CaclulatorComponent.
 
 
-## Assumption Made
-- The app is developed accordingly to the native Windows calculator
+## Assumptions Made
+- The app is developed accordingly to the native Windows calculator.
 - An operator value is displayed in the top right corner to show the currently selected operation.
-- Input's lenght: Numbers that exceed 12 characters (including digits and the decimal point) are displayed with scientific notation.
-- The calculator supporst addition, subtraction, multiplication, division and modulus operations.
+- Input's lenght: numbers that exceed 12 characters (including digits and the decimal point) are displayed with scientific notation.
+- The calculator supporst addition, subtraction, multiplication, division and modulo operations.
 - The result of calculations is rounded to 6 decimal places.
 
 
