@@ -1,0 +1,29 @@
+<div class="app-wrapper">
+    <app-card>
+
+        <p class="calc-heading">Angular Calculator</p>
+
+        @if (functionValue()) {
+        <div class="function-value">
+            {{ functionValue() }}
+        </div>
+        }
+
+        <div class="display">{{ displayValue() }}</div>
+
+        <div class="buttons">
+        @for (row of buttons; track row) 
+        {
+            @for (button of row; track button) 
+            {
+            <app-button
+                [label]="button"
+                [ngClass]="getButtonClass(button)"
+                (clicked)="handleClick(button)">
+            </app-button>
+            }
+        }
+        </div>
+
+    </app-card>
+</div>
